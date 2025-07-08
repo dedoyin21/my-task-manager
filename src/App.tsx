@@ -32,12 +32,6 @@ const App: React.FC = () => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
 
-  const today = new Date().toLocaleDateString('en-US', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
 
   const addTask = (title: string) => {
     const newTask: Task = {
