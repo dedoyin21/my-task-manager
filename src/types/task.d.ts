@@ -3,5 +3,7 @@ export interface Task {
   title: string;
   completed: boolean;
   category: string;
-  dueDate?: string; // Optional
+  dueDate?: string; 
+  userEmail: string;
+  createdAt: string; // ISO date string
 }
